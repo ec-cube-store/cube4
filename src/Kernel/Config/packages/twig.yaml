@@ -1,0 +1,13 @@
+#http://symfony.com/doc/current/reference/configuration/twig.html
+twig:
+    debug: '%kernel.debug%'
+    cache: '%kernel.cache_dir%/twig'
+    charset: '%kernel.charset%'
+    strict_variables: '%kernel.debug%'
+    default_path: '%kernel.project_dir%/templates'
+    paths:
+      '%kernel.project_dir%/src/': ~
+    form_themes:
+#        - 'form/layout.html.twig'
+#        - 'form/fields.html.twig'
+        - 'bootstrap_3_layout.html.twig'

@@ -1,0 +1,19 @@
+#http://symfony.com/doc/current/reference/configuration/framework.html
+framework:
+    secret: '2c7bdd5a26d7463ecb2804c62fba8b21'
+    default_locale: en
+    csrf_protection: { enabled: true }
+    http_method_override: true
+
+    # uncomment this entire section to enable sessions
+    session:
+    #    # With this config, PHP's native session handling is used
+        handler_id: ~
+
+    esi: ~
+    #fragments: ~
+    php_errors:
+        log: true
+    assets:
+            json_manifest_path: '%kernel.project_dir%/public/build/manifest.json'
+    validation: { enable_annotations: true }
